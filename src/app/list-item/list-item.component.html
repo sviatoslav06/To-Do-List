@@ -1,0 +1,8 @@
+<ul class="list-card" [style.text-decoration]="i.checked ? 'line-through':'' "
+    [style.background-color]="item.priority ? 'rgb(144 175 185)':'rgb(166 204 217)' ">
+    <input #i type="checkbox" [checked]="item.status" (change)="!i['checked']">
+    <p *ngIf="item.priority; else elseBlock">!</p>
+    <ng-template #elseBlock></ng-template>
+    <p>{{item.title}}</p>
+    <p class="dateTime">{{item.deadline | date}}</p>
+</ul>

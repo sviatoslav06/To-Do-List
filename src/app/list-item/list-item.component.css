@@ -1,0 +1,18 @@
+ul {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    min-width: 20%;
+    width: fit-content;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.dateTime {
+    padding: 3px;
+    color: white;
+    background-color: #7899a5;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

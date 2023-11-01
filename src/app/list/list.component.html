@@ -1,0 +1,9 @@
+<h1>My To Do List</h1>
+
+<hr>
+<app-create-list-item (createEvent)="addUser($event)"></app-create-list-item>
+<hr>
+
+<li>
+    <app-list-item *ngFor="let i of items" [item]="i"></app-list-item>
+</li>

@@ -1,0 +1,24 @@
+<h2>Create Item Form</h2>
+
+<form [formGroup]="creationForm" (ngSubmit)="onSubmit()">
+    <label>
+        <span>Title:</span>
+        <input type="text" formControlName="title">
+    </label>
+    <label>
+        <span>Status:</span>
+        <input type="checkbox" formControlName="status">
+    </label>
+    <label>
+        <span>Priority:</span>
+        <input type="checkbox" formControlName="priority">
+    </label>
+    <label>
+        <span>Deadline:</span>
+        <input type="date" formControlName="deadline">
+    </label>
+    <div>
+        <button type="submit">Create</button>
+        <button type="reset">Cancel</button>
+    </div>
+</form>

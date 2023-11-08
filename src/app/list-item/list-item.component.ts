@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { IItem } from './item';
 import { CheckboxControlValueAccessor } from '@angular/forms';
 
@@ -15,5 +15,11 @@ export class ListItemComponent {
     status: false,
     priority: false,
     deadline: new Date()
+  }
+
+  @Output() removeItemEvent = new EventEmitter<number>();
+
+  removeItem(): void {
+    this.removeItemEvent.emit(this.item.id);
   }
 }

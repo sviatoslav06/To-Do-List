@@ -1,18 +1,29 @@
-ul {
+li {
     display: flex;
     align-items: baseline;
     gap: 10px;
     min-width: 20%;
-    width: fit-content;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
     font-size: 20px;
+    width: fit-content;
     list-style-type: none;
-    padding: 0;
 }
 
 .dateTime {
     padding: 3px;
+    border-radius: 5px;
     color: white;
     background-color: #7899a5;
-    border-radius: 5px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button {
+    font-size: 16px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
 }
